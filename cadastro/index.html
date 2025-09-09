@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificação de Acesso</title>
+</head>
+<body>
+  <h2>Verificação de Acesso ao Sistema</h2>
+
+  <script>
+  
+    const nome = prompt("Digite seu nome:");
+    const idade = parseInt(prompt("Digite sua idade:"));
+    const cadastroInput = prompt("Você já possui cadastro? (digite true ou false)").toLowerCase();
+
+    
+    const possuiCadastro = cadastroInput === "true";
+
+  
+    if (idade < 12) {
+      alert("Acesso negado: idade insuficiente para cadastro.");
+      console.log(`Usuário ${nome} tem ${idade} anos. Acesso negado.`);
+    } else if ((idade >= 12 && idade <= 17) && possuiCadastro === true) {
+      alert("Acesso permitido com restrições para menores.");
+      console.log(`Usuário ${nome} tem ${idade} anos e já possui cadastro. Acesso restrito liberado.`);
+    } else if (idade >= 18 || possuiCadastro === true) {
+      alert("Acesso completo permitido.");
+      console.log(`Usuário ${nome} tem ${idade} anos ou já possui cadastro. Acesso total liberado.`);
+    } else {
+      alert("Usuário precisa se cadastrar primeiro.");
+      console.log(`Usuário ${nome} não possui cadastro. Acesso negado.`);
+    }
+  </script>
+</body>
+</html>

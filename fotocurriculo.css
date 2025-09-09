@@ -1,0 +1,78 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #073054; /* Azul bem clarinho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgb(215, 219, 250);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    position: relative;
+    border-top: 5px solid #345272; /* Destaque azul escuro */
+}
+
+.perfil-img {
+    width: 100px; /* Reduzi o tamanho da imagem */
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 3px solid rgb(120, 94, 177);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #6593c4;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+textarea {
+    width: calc(100% - 20px);
+    height: 120px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #0a2f56;
+    border-radius: 8px;
+    background: #ebf0f5;
+    resize: none;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    border-color: #043264;
+}
+
+button {
+    margin-top: 15px;
+    background: #0d3763;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #3e5c7c;
+}
+

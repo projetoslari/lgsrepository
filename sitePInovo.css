@@ -1,0 +1,57 @@
+/* CSS */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0D1B2A;
+    color: #E0E1DD;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1B263B;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.icons img {
+    width: 50px;
+    height: auto;
+}
+
+nav {
+    background: #415A77;
+    padding: 10px;
+}
+
+nav a {
+    color: #E0E1DD;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#mapContainer {
+    width: 80%;
+    height: 500px;
+    background: #778DA9;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background: #1B263B;
+    padding: 20px;
+}
+
+.voltar {
+    color: #E0E1DD;
+    text-decoration: none;
+    font-size: 16px;
+}
+

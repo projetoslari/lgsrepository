@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Viagem</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: rgb(219, 181, 255);
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      background-color: rgb(170, 248, 222);
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de Viagem</h1>
+  <button onclick="calcularViagem()">Calcular</button>
+
+  <script>
+    function calcularViagem() {
+      let nome = prompt("Qual é o seu nome?");
+      let distancia = parseFloat(prompt("Qual a distância da viagem em km?"));
+      let velocidade = parseFloat(prompt("Qual a velocidade média em km/h?"));
+      let consumo = parseFloat(prompt("Quantos km o carro faz por litro?"));
+      let precoGasolina = parseFloat(prompt("Qual o preço da gasolina por litro?"));
+
+      if (isNaN(distancia) || isNaN(velocidade) || isNaN(consumo) || isNaN(precoGasolina)) {
+        alert("Por favor, insira apenas números válidos!");
+        return;
+      }
+
+      let tempoViagem = distancia / velocidade;
+      let litrosNecessarios = distancia / consumo;
+      let gastoTotal = litrosNecessarios * precoGasolina;
+
+      
+      alert("Olá, " + nome + "! Sua viagem terá uma duração de " + tempoViagem.toFixed(2) + " horas.\n" +
+            "Você vai precisar de " + litrosNecessarios.toFixed(2) + " litros de gasolina.\n" +
+            "O custo total será de R$ " + gastoTotal.toFixed(2));
+
+    
+      console.log(`\n--- Resultado da Viagem ---`);
+      console.log(`Nome: ${nome}`);
+      console.log(`Duração estimada: ${tempoViagem.toFixed(2)} horas`);
+      console.log(`Gasolina necessária: ${litrosNecessarios.toFixed(2)} litros`);
+      console.log(`Custo total: R$ ${gastoTotal.toFixed(2)}`);
+    }
+  </script>
+</body>
+</html>

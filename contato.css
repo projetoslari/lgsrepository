@@ -1,0 +1,35 @@
+/* Estilização geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #eef5f9; /* Azul claro suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo do container principal */
+.container {
+    background: rgb(187, 170, 202);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    border-top: 5px solid #9484a9;
+}
+
+/* Estilo do título */
+h2 {
+    color: #2f0e5f;
+    margin-bottom: 15px;
+}
+
+/* Estilo das informações */
+.info {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2f0e5f;
+    margin: 10px 0;
+}

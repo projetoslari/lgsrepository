@@ -1,0 +1,63 @@
+/* Estilização geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7d6f5; /* Azul claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container principal */
+.container {
+    background: rgb(252, 189, 189);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    border-top: 5px solid #920e0e; /* Destaque laranja */
+}
+
+/* Título */
+h2 {
+    color: #b01919;
+    margin-bottom: 15px;
+}
+
+/* Estilização dos links */
+.social {
+    margin: 10px 0;
+}
+
+.social a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #991818;
+    border-radius: 8px;
+    background: #f8e0e0;
+    transition: 0.3s;
+}
+
+.social a i {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #6d1c03;
+}
+
+/* Efeito hover */
+.social a:hover {
+    background: #d33d3d;
+    color: white;
+}
+
+.social a:hover i {
+    color: rgb(103, 24, 24);
+}

@@ -1,0 +1,30 @@
+
+.filho-direto > p {
+    background-color: #ccffcc;
+    color: #006600;
+}
+
+
+.descendente p {
+    background-color: #cce5ff;
+    color: #004080;
+}
+
+
+.irmao-adjacente div + p {
+    background-color: #ffccd5;
+    color: #990033;
+}
+
+
+.irmaos-seguintes p ~ ul li {
+    background-color: #ffe0cc;
+    color: #cc5200;
+}
+
+
+.lista-seletores div,
+.lista-seletores p {
+    background-color: #e6e6e6;
+    color: #000000;
+}

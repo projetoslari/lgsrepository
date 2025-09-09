@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Display e Flex em CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <header>display: inline-block</header>
+        <aside>Permanece ao lado, mas permite definir width e height. Fica em linha, mas com controle de tamanho.</aside>
+        <article>
+            <div class="item-inline-block">Item 1</div>
+            <div class="item-inline-block">Item 2</div>
+            <div class="item-inline-block">Item 3</div>
+        </article>
+    </section>
+
+
+    <section>
+        <header>display: block</header>
+        <aside>Cada item ocupa 100% da largura disponível. Elementos de bloco sempre quebram a linha.</aside>
+        <article>
+            <div class="item-block">Item 1</div>
+            <div class="item-block">Item 2</div>
+            <div class="item-block">Item 3</div>
+        </article>
+    </section>
+
+   
+    <section>
+        <header>display: none</header>
+        <aside>O elemento simplesmente desaparece da tela e não ocupa nenhum espaço.</aside>
+        <article>
+            <div class="item-none">Item 1</div>
+            <div class="item-none">Item 2</div>
+            <div class="item-none">Item 3</div>
+        </article>
+    </section>
+
+    
+    <section>
+        <header>display: inline</header>
+        <aside>Elementos em linha. Ficam um ao lado do outro, ignorando aparência largada do conteúdo. Não afeta altura ou largura personalizada.</aside>
+        <article>
+            <span class="item-inline">Item 1</span>
+            <span class="item-inline">Item 2</span>
+            <span class="item-inline">Item 3</span>
+        </article>
+    </section>
+
+   
+    <section>
+        <header>display: flex + flex-direction: row</header>
+        <aside>Os itens são organizados horizontalmente em uma linha (valor padrão do flex).</aside>
+        <article class="flex-row">
+            <div class="item-flex">1</div>
+            <div class="item-flex">2</div>
+            <div class="item-flex">3</div>
+        </article>
+    </section>
+
+  
+    <section>
+        <header>justify-content: space-around</header>
+        <aside>Distribui os itens com espaçamento igual entre eles e entre as bordas do container.</aside>
+        <article class="flex-space-around">
+            <div class="item-flex">1</div>
+            <div class="item-flex">2</div>
+            <div class="item-flex">3</div>
+        </article>
+    </section>
+
+    
+    <section>
+        <header>display: flex + flex-direction: column</header>
+        <aside>Os itens são empilhados verticalmente (um embaixo do outro).</aside>
+        <article class="flex-column">
+            <div class="item-flex">A</div>
+            <div class="item-flex">B</div>
+            <div class="item-flex">C</div>
+        </article>
+    </section>
+
+    
+    <section>
+        <header>align-items: center</header>
+        <aside>Centraliza os itens verticalmente dentro do container flexível.</aside>
+        <article class="flex-center">
+            <div class="item-flex">Atividade</div>
+            <div class="item-flex">Inicial</div>
+            <div class="item-flex">Centro</div>
+        </article>
+    </section>
+    <!-- FLEX-WRAP -->
+<section>
+    <header>flex-wrap: wrap</header>
+    <aside>Permite que os itens "quebrem linha" quando não há espaço suficiente na horizontal.</aside>
+    <article class="flex-wrap">
+        <div class="item-flex blue">1</div>
+        <div class="item-flex blue">2</div>
+        <div class="item-flex blue">3</div>
+        <div class="item-flex blue">4</div>
+        <div class="item-flex blue">5</div>
+        <div class="item-flex blue">6</div>
+    </article>
+</section>
+
+<section>
+    <header>align-content: space-between</header>
+    <aside>Aplica espaçamento vertical entre as linhas quando o conteúdo está em múltiplas linhas (requer também wrap e altura definida no container).</aside>
+    <article class="align-space-between">
+        <div class="item-flex red">1</div>
+        <div class="item-flex red">2</div>
+        <div class="item-flex red">3</div>
+        <div class="item-flex red">4</div>
+        <div class="item-flex red">5</div>
+        <div class="item-flex red">6</div>
+    </article>
+</section>
+
+
+</body>
+</html>

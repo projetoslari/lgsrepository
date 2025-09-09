@@ -1,0 +1,52 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+ 
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+ 
+    .exemplo {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+ 
+    
+    .exemplo1::first-line {
+      color: rgb(197, 7, 7);
+      font-weight: bold;
+    }
+ 
+    
+    .exemplo2::first-letter {
+      color: rgb(139, 8, 172);
+      font-size: 2em;
+      font-weight: bold;
+    }
+ 
+    
+    .exemplo3::before {
+      content: "👉 ";
+      color: rgb(29, 4, 113);
+    }
+ 
+    
+    .exemplo4::after {
+      content: " ✔️";
+      color: purple;
+    }
+ 
+
+    .exemplo5::selection {
+      background: #026108;
+      color: black;
+    }
+ 
+    h2 {
+      margin-top: 30px;
+      font-size: 18px;
+    }
